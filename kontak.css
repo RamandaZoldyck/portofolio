@@ -1,0 +1,116 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(img/bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(5px);
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    background-color: pink; 
+    padding: 3px; 
+}
+
+nav h1 {
+    font-size: 1.5rem;
+    color: #444;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: pink;
+    padding: 8px 12px;
+    border-bottom: 3px solid transparent; 
+    transition: border-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    border-bottom: 3px solid pink; 
+}
+
+.content {
+    max-width: 700px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+
+.profile-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: rgba(255, 224, 224, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+.photo-frame {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 15px;
+    border: 4px solid pink;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.profile-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.profile-container .phone {
+    color: #4CAF50;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.profile-container .status {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.profile-container .about {
+    font-size: 0.9rem;
+    color: #444;
+}
